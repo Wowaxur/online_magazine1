@@ -1,0 +1,80 @@
+.footer {
+    background-color: #161616;
+    color: #ffffff;
+    width: 1440px;
+    margin: 0 auto;
+    padding: 50px 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.footerContainer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 100px;
+}
+
+.sectionsWrapper {
+    display: grid;
+    grid-template-columns: repeat(5, minmax(150px, 1fr));
+    gap: 0 40px;
+}
+
+.contactContainer {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    flex: 0 1 250px;
+}
+
+
+.socialLinks {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+}
+
+.socialLinks h4 {
+    font-size: 18px;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-bottom: 15px;
+}
+
+.informat {
+    font-size: 14px;
+    color: #bbb;
+    line-height: 1.6;
+}
+
+.informat h4 {
+    font-size: 16px;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+    color: #ffffff;
+}
+
+.informat p {
+    font-size: 14px;
+    line-height: 1.6;
+    margin-top: 10px;
+}
+
+.footer a {
+    text-decoration: none;
+    color: #fff;
+    transition: color 0.3s ease;
+}
+
+.footer a:hover {
+    color: #aaa;
+}
+
+.lastColumn {
+    flex: 2 1 300px; /* Последняя колонка занимает больше места */
+}
