@@ -1,5 +1,6 @@
 import React from "react";
 import styles from "./popular.module.css";
+import {getCategoryClass} from "../../../PopularStylesHelper";
 
 type NewsItem = {
     id: number;
@@ -39,27 +40,7 @@ function getRandomNewsSet(news: NewsItem[], count: number): NewsItem[] {
     return selectedNews;
 }
 
-// Функция для определения класса цвета по категории
-const getCategoryClass = (category: string): string => {
-    switch (category.toUpperCase()) {
-        case "TECH":
-            return styles.tech;
-        case "POLITICS":
-            return styles.politics;
-        case "HOME":
-            return styles.home;
-        case "HUMANS":
-            return styles.human;
-        case "STARTUPS":
-            return styles.startups;
-        case "HEALTH":
-            return styles.health;
-        case "LIFESTYLE":
-            return styles.lifestyle;
-        default:
-            return "";
-    }
-};
+
 
 const Popular = ({ news }: PopularProps) => {
     const randomNews = getRandomNewsSet(news, 9);

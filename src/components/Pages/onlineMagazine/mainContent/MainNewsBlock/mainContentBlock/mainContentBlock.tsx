@@ -19,12 +19,10 @@ const MainContentBlock = () => {
         <div className={styles.container}>
             {categories.map((category) => {
                 const style = categoryStyles[category];
-
                 if (!style) {
                     console.error(`Style for category "${category}" is not defined.`);
                     return null;
                 }
-
                 return (
                     <div key={category} className={styles.categoryBlock}>
                         <LogoWithRubric
