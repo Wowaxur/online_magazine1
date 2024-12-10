@@ -1,4 +1,4 @@
-import { FooterData } from "./components/Pages/onlineMagazine/footer/footerDataTypes";
+import { FooterData } from "./components/Pages/onlineMagazine/Features/footer/footerDataTypes";
 
 
 
@@ -94,14 +94,13 @@ export const information = [
         description:
             "© 2019 Enim tempor velit enim irure nostrud irure cupidatat amet deserunt cillum laborum. Ad nisi est consequat adipisicing sint aliquip. Mollit officia ullamco. Enim tempor velit enim irure nostrud irure cupidatat amet deserunt.",
     },
-];
-export const news: NewsItem[] = [
+];export const news: NewsItem[] = [
     // Politics
     {
         id: 1,
         category: "Politics",
         title: "New Climate Policy Announced by Government",
-        content: "The government has unveiled a bold new climate policy aimed at reducing emissions by 40% by 2030. The plan includes investments in renewable energy and stricter regulations on industrial emissions.",
+        content: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus eget nisl nec velit auctor pellentesque. Curabitur blandit quam et interdum molestie. Maecenas sit amet lorem vel magna feugiat feugiat. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Sed tempus turpis vitae mauris suscipit, nec pharetra justo interdum. Ut luctus, felis id venenatis vestibulum, risus lacus ultrices justo, at feugiat justo elit at magna.",
         date: "2024-12-01",
         author: "Jane Doe",
         tags: ["Main"]
@@ -110,7 +109,7 @@ export const news: NewsItem[] = [
         id: 2,
         category: "Politics",
         title: "International Summit Addresses Global Security",
-        content: "World leaders gathered for a summit to discuss pressing global security concerns, including cyber threats and international conflicts. The summit highlighted the need for stronger collaboration.",
+        content: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque eleifend auctor erat. Ut tincidunt diam vel nisi pretium, in faucibus orci consectetur. Vestibulum id tincidunt felis. Fusce malesuada ultricies sapien, a vulputate nisi dapibus ut. Ut nec eros dolor. Mauris luctus auctor quam, vitae sodales augue ullamcorper in.",
         date: "2024-11-30",
         author: "Samantha Brown",
         tags: []
@@ -119,7 +118,7 @@ export const news: NewsItem[] = [
         id: 3,
         category: "Politics",
         title: "Election Results Spark Nationwide Debate",
-        content: "The recent election results have led to widespread discussions about the future direction of the country. Analysts weigh in on the potential policy changes.",
+        content: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean tincidunt ligula vel nulla eleifend, nec sagittis lectus dictum. Phasellus euismod mollis nulla, vitae molestie nisi tempor in. Nam luctus id quam nec egestas. Suspendisse fringilla est eu sem dictum feugiat. Donec tincidunt non lorem id efficitur.",
         date: "2024-11-25",
         author: "Paul Davis",
         tags: []
@@ -128,7 +127,7 @@ export const news: NewsItem[] = [
         id: 4,
         category: "Politics",
         title: "New Tax Legislation Faces Criticism",
-        content: "Proposed tax reforms have sparked backlash from both sides of the political spectrum. Experts predict challenges in passing the legislation.",
+        content: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut vestibulum vulputate ex, ac facilisis sapien luctus non. Fusce id neque vehicula, dignissim nulla a, dictum risus. Cras at lectus id libero luctus gravida. Suspendisse viverra, nisi sit amet mollis fermentum, eros justo suscipit est, id tincidunt odio erat vel elit. Integer ac accumsan neque. Ut pharetra, lectus non tincidunt tristique, lacus velit vehicula nulla, eget laoreet justo risus ac sapien.",
         date: "2024-12-03",
         author: "Lucy Evans",
         tags: []
@@ -137,7 +136,7 @@ export const news: NewsItem[] = [
         id: 5,
         category: "Politics",
         title: "Government Approves New Trade Deal",
-        content: "A landmark trade agreement was approved, promising to boost economic growth and strengthen international relations.",
+        content: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras rhoncus, eros sed aliquet dapibus, ligula magna ultricies ligula, vel feugiat turpis ligula non velit. Integer at accumsan orci. Sed dictum mi eu tortor dignissim, ac consectetur nisi congue. Nam malesuada nisl at pharetra tristique.",
         date: "2024-12-02",
         author: "Chris White",
         tags: []
@@ -148,16 +147,16 @@ export const news: NewsItem[] = [
         id: 6,
         category: "Home",
         title: "3D-Printed Houses: The Future of Affordable Living",
-        content: "A new startup is revolutionizing the housing market with 3D-printed homes. These houses can be built in just 48 hours and cost significantly less than traditional construction methods.",
+        content: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur accumsan dolor nec enim ultricies, non consequat nisl gravida. Suspendisse nec est lectus. Ut elementum justo sit amet mi feugiat, quis pellentesque nunc auctor. Nullam pellentesque vehicula quam, vitae rutrum est tempor id. Sed rhoncus lacus nec ligula gravida, sit amet luctus lacus dignissim.",
         date: "2024-12-03",
         author: "John Smith",
-        tags: ['Main']
+        tags: ["Main"]
     },
     {
         id: 7,
         category: "Home",
         title: "Innovative Smart Kitchens on the Rise",
-        content: "Smart kitchens equipped with AI-driven appliances and automated systems are becoming a reality. These kitchens promise to make cooking easier and more efficient than ever.",
+        content: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer suscipit eros in erat malesuada, in bibendum libero porttitor. Cras convallis, orci sed rutrum hendrerit, neque ipsum vehicula lorem, vel congue nisi turpis vitae libero. Etiam fringilla vehicula lorem, nec aliquet purus porttitor et.",
         date: "2024-12-04",
         author: "David Wilson",
         tags: []
@@ -166,7 +165,7 @@ export const news: NewsItem[] = [
         id: 8,
         category: "Home",
         title: "Eco-Friendly Home Designs Gaining Popularity",
-        content: "Sustainable architecture is on the rise, with eco-friendly materials and energy-efficient designs leading the way.",
+        content: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla malesuada tempor urna. Vestibulum consectetur, eros in vehicula iaculis, felis nisi condimentum magna, eget interdum orci felis sed augue. Nulla vel fringilla erat. Sed non ligula sapien. Aliquam sit amet eros vestibulum, vehicula lectus vitae, varius odio.",
         date: "2024-11-28",
         author: "Emma Green",
         tags: []
@@ -175,7 +174,7 @@ export const news: NewsItem[] = [
         id: 9,
         category: "Home",
         title: "Tiny Homes Movement Continues to Expand",
-        content: "Tiny homes are becoming a popular choice for those seeking affordability and sustainability in housing.",
+        content: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus vel erat ligula. Ut feugiat mollis odio, sit amet interdum eros vehicula id. Integer aliquam leo lectus, vel pellentesque sapien rutrum id. Pellentesque at dui gravida, faucibus ipsum vel, feugiat sem. Proin eu neque interdum.",
         date: "2024-12-01",
         author: "Oliver Brown",
         tags: []
@@ -184,7 +183,7 @@ export const news: NewsItem[] = [
         id: 10,
         category: "Home",
         title: "Smart Home Security Systems Advancing Rapidly",
-        content: "New advancements in smart home technology are making security systems more efficient and reliable than ever.",
+        content: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce eleifend est id viverra efficitur. Mauris rhoncus sed lacus non tempus. Suspendisse potenti. Nam suscipit eros at ultricies facilisis. Integer molestie, sapien a vehicula sagittis, dolor nisi rhoncus ante, vitae egestas lacus nisl non sem.",
         date: "2024-12-02",
         author: "Sophia Walker",
         tags: []
@@ -195,7 +194,7 @@ export const news: NewsItem[] = [
         id: 11,
         category: "Lifestyle",
         title: "Top 10 Travel Destinations for 2025",
-        content: "As the new year approaches, travel experts have compiled a list of the top 10 destinations to visit in 2025.",
+        content: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam non erat libero. Sed euismod felis ut fermentum feugiat. Morbi sit amet orci vehicula, egestas dui eu, dapibus lectus. Nullam volutpat est non nunc maximus, et venenatis orci interdum. Sed euismod consequat risus sit amet sollicitudin. Aliquam tempor urna sit amet metus placerat, sit amet tempor purus pharetra.",
         date: "2024-11-28",
         author: "Emily Carter",
         tags: ['Main']
@@ -204,7 +203,7 @@ export const news: NewsItem[] = [
         id: 12,
         category: "Lifestyle",
         title: "The Return of Minimalist Fashion",
-        content: "Minimalism is making a comeback in the fashion world, with designers embracing clean and simple designs.",
+        content: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer suscipit nunc vel lacus sodales, nec posuere justo consectetur. Vestibulum tincidunt enim justo, in congue justo aliquet ac. Curabitur id tincidunt felis. Sed egestas lacinia lorem at efficitur. Nunc non velit non sapien volutpat convallis.",
         date: "2024-12-04",
         author: "Rachel Young",
         tags: []
@@ -213,7 +212,7 @@ export const news: NewsItem[] = [
         id: 13,
         category: "Lifestyle",
         title: "Fitness Trends to Watch in 2025",
-        content: "New fitness trends are emerging, focusing on holistic well-being and mental health alongside physical fitness.",
+        content: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. In tempor metus ipsum, sed mollis ante ullamcorper et. Ut tempor, justo sed sollicitudin suscipit, lorem dolor posuere justo, eu porttitor velit turpis ut nisi. Pellentesque nec tempor risus. Aliquam et turpis at arcu rhoncus sollicitudin.",
         date: "2024-11-29",
         author: "Liam Harris",
         tags: []
@@ -222,7 +221,7 @@ export const news: NewsItem[] = [
         id: 14,
         category: "Lifestyle",
         title: "Sustainable Fashion Brands to Follow",
-        content: "Eco-friendly fashion is on the rise, with more brands committing to sustainability and ethical production practices.",
+        content: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris tempor ex et lorem auctor fermentum. Integer malesuada erat id nunc consectetur viverra. Curabitur ac bibendum enim. Nam eget nisl non lorem tincidunt dictum. Fusce at massa nunc. Sed sit amet nunc nulla. Etiam id gravida neque.",
         date: "2024-12-01",
         author: "Mia Collins",
         tags: []
@@ -231,7 +230,7 @@ export const news: NewsItem[] = [
         id: 15,
         category: "Lifestyle",
         title: "The Rise of Plant-Based Diets",
-        content: "More people are turning to plant-based diets for health and environmental benefits. Experts weigh in on its growing popularity.",
+        content: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus sit amet augue eu velit dictum efficitur non at eros. Integer viverra maximus purus a convallis. Sed luctus, dui sit amet maximus dapibus, eros ex egestas lectus, non vulputate purus lorem et ipsum. Donec pellentesque suscipit neque id vulputate.",
         date: "2024-12-02",
         author: "Ethan Carter",
         tags: []
@@ -242,7 +241,7 @@ export const news: NewsItem[] = [
         id: 16,
         category: "Tech",
         title: "AI-Powered Gadgets to Watch in 2025",
-        content: "Artificial intelligence continues to transform technology. Here are the top AI-powered gadgets expected to dominate the market in 2025.",
+        content: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur a lacus ut ligula iaculis scelerisque. Sed ac bibendum purus. Nunc condimentum quam ac fermentum hendrerit. Mauris accumsan ligula non dui aliquet posuere. Curabitur non ex nec felis eleifend gravida. Phasellus fermentum orci a eros lacinia.",
         date: "2024-12-02",
         author: "Michael Lee",
         tags: ['Main']
@@ -251,7 +250,7 @@ export const news: NewsItem[] = [
         id: 17,
         category: "Tech",
         title: "The Evolution of 5G Networks",
-        content: "5G technology is expanding, promising faster internet speeds and enhanced connectivity for users worldwide.",
+        content: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur ac enim nec risus rutrum suscipit. Vestibulum interdum et magna nec vulputate. Etiam vestibulum id odio nec tempus. Fusce non sapien a orci varius cursus eu non ligula. Nam ullamcorper, justo a sollicitudin facilisis, purus eros mollis dui, a vulputate sapien dolor sit amet justo.",
         date: "2024-11-30",
         author: "Sophia Johnson",
         tags: []
@@ -260,7 +259,7 @@ export const news: NewsItem[] = [
         id: 18,
         category: "Tech",
         title: "Quantum Computing Breakthroughs in 2024",
-        content: "Researchers have made significant strides in quantum computing, paving the way for advancements in various industries.",
+        content: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse potenti. Vivamus id purus auctor, interdum justo eget, pretium orci. Pellentesque nec est sit amet ligula pharetra lobortis. Aliquam condimentum, purus ut faucibus pharetra, lorem ipsum varius purus at vehicula elit. Nullam vel egestas metus.",
         date: "2024-12-01",
         author: "William Brown",
         tags: []
@@ -269,7 +268,7 @@ export const news: NewsItem[] = [
         id: 19,
         category: "Tech",
         title: "Top Cybersecurity Trends for the Coming Year",
-        content: "With cyber threats on the rise, experts share the latest trends in cybersecurity to keep systems and data safe.",
+        content: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec cursus sollicitudin quam non malesuada. Ut vitae turpis at nulla vehicula cursus. Quisque vel odio nec metus tincidunt consequat ut at orci. Ut auctor, erat sit amet feugiat viverra, arcu sapien fermentum justo, id laoreet ligula sem vel purus.",
         date: "2024-12-03",
         author: "Ella Wilson",
         tags: []
@@ -278,7 +277,7 @@ export const news: NewsItem[] = [
         id: 20,
         category: "Tech",
         title: "Electric Cars to Dominate the Market by 2030",
-        content: "Automakers are ramping up production of electric vehicles as consumer demand continues to grow.",
+        content: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed feugiat nisi et ipsum accumsan, ac laoreet purus iaculis. Phasellus ut ligula tincidunt, ultricies augue ut, euismod urna. Curabitur eget orci neque. Integer suscipit volutpat lacus non efficitur. Fusce tincidunt mi nec quam maximus condimentum.",
         date: "2024-12-04",
         author: "James White",
         tags: []
@@ -289,7 +288,7 @@ export const news: NewsItem[] = [
         id: 21,
         category: "Startups",
         title: "New FinTech Startup Aims to Simplify Banking",
-        content: "A new financial technology company is streamlining banking services with an innovative mobile app.",
+        content: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus mollis, nisi et convallis convallis, lorem nulla lobortis nisi, at placerat nisi lectus ut risus. Aenean volutpat, metus non malesuada tincidunt, purus odio scelerisque urna, id fringilla erat dolor vitae magna. Etiam quis velit ac velit malesuada sollicitudin.",
         date: "2024-12-01",
         author: "Lucas Wright",
         tags: ['Main']
@@ -298,7 +297,7 @@ export const news: NewsItem[] = [
         id: 22,
         category: "Startups",
         title: "GreenTech Startup Develops Innovative Solar Panels",
-        content: "A startup has developed next-generation solar panels that are more efficient and affordable than ever.",
+        content: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut faucibus orci sit amet eros feugiat, in vehicula libero egestas. Pellentesque volutpat, magna a feugiat vehicula, turpis lorem volutpat nisi, at dignissim libero nulla nec neque. Fusce bibendum, enim eu euismod tempus, tortor sapien congue purus, vel vulputate ligula felis id metus.",
         date: "2024-12-03",
         author: "Olivia Martinez",
         tags: []
@@ -307,7 +306,7 @@ export const news: NewsItem[] = [
         id: 23,
         category: "Startups",
         title: "HealthTech Revolutionizes Patient Care",
-        content: "A HealthTech startup is leveraging AI to improve patient outcomes and streamline medical processes.",
+        content: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla facilisi. Nam placerat volutpat est at iaculis. Donec congue velit vitae sollicitudin lobortis. Phasellus congue, mauris et vulputate ultricies, velit nunc sollicitudin lectus, at egestas turpis velit eu orci. Aliquam erat volutpat. Nunc tincidunt sapien ligula, at volutpat augue vulputate et.",
         date: "2024-11-29",
         author: "Benjamin Davis",
         tags: []
@@ -316,7 +315,7 @@ export const news: NewsItem[] = [
         id: 24,
         category: "Startups",
         title: "EdTech Startup Launches New Learning Platform",
-        content: "An EdTech company has launched a platform designed to make education more engaging and accessible.",
+        content: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras non dictum odio, vel sodales nisl. Pellentesque ut nisi at sem convallis cursus ac id libero. Nullam aliquam, nisi ac luctus feugiat, sem ligula varius elit, ac auctor turpis leo vel turpis. Vivamus euismod, libero a interdum dictum, dui neque efficitur ex, sit amet venenatis odio arcu id urna.",
         date: "2024-12-02",
         author: "Grace Johnson",
         tags: []
@@ -325,7 +324,7 @@ export const news: NewsItem[] = [
         id: 25,
         category: "Startups",
         title: "Agritech Startup Tackles Food Waste",
-        content: "This startup is using AI and IoT to reduce food waste across supply chains, benefiting both consumers and the environment.",
+        content: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ultrices mi vel lorem congue, vel facilisis eros hendrerit. Nam tempus lectus ac ligula varius cursus. Ut in enim ut lorem condimentum efficitur. Mauris gravida augue vel mauris viverra, vitae ultricies odio consequat. Nulla facilisi. Integer egestas, orci et tincidunt euismod, felis ipsum sodales enim, ac cursus turpis libero sit amet ipsum.",
         date: "2024-12-04",
         author: "Daniel Thompson",
         tags: []
@@ -336,7 +335,7 @@ export const news: NewsItem[] = [
         id: 26,
         category: "Humans",
         title: "Inspirational Story: Overcoming Adversity",
-        content: "Meet a young entrepreneur who turned their struggles into a thriving business, inspiring others along the way.",
+        content: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer eget orci purus. Cras et sem in purus sollicitudin accumsan. Mauris venenatis arcu sed nisl pharetra, non tempor urna consequat. Ut accumsan nulla ac lacus scelerisque placerat. Fusce vehicula, ligula id vestibulum porttitor, orci arcu convallis ipsum, ac volutpat risus felis ac ligula.",
         date: "2024-12-03",
         author: "Anna Scott",
         tags: ['Main']
@@ -345,7 +344,7 @@ export const news: NewsItem[] = [
         id: 27,
         category: "Humans",
         title: "Volunteers Making a Difference in Disaster Relief",
-        content: "Discover the inspiring stories of volunteers who are providing crucial support in disaster-stricken areas.",
+        content: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut fermentum nunc ut mollis vehicula. Suspendisse potenti. Sed pretium ligula at metus venenatis scelerisque. Phasellus convallis, enim sit amet fringilla euismod, nulla neque sollicitudin leo, sed vulputate eros odio ac nisl. Aliquam erat volutpat. Vivamus volutpat, lorem at convallis feugiat, nisl urna feugiat eros, nec dignissim libero risus a nulla.",
         date: "2024-11-30",
         author: "Thomas Edwards",
         tags: []
@@ -354,7 +353,7 @@ export const news: NewsItem[] = [
         id: 28,
         category: "Humans",
         title: "Artists Redefining Creativity in 2025",
-        content: "A new generation of artists is using technology to push the boundaries of creative expression.",
+        content: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla et nunc nec mi cursus euismod. Aenean aliquet, tortor nec condimentum venenatis, ante ligula pharetra eros, non aliquam velit libero non arcu. Donec a orci nunc. Pellentesque nec odio sed risus tincidunt scelerisque. Mauris dictum, lorem a egestas interdum, arcu purus lobortis purus, a suscipit ante arcu et velit.",
         date: "2024-12-01",
         author: "Charlotte Morgan",
         tags: []
@@ -363,7 +362,7 @@ export const news: NewsItem[] = [
         id: 29,
         category: "Humans",
         title: "The Rise of Community-Led Initiatives",
-        content: "Local communities are stepping up to create impactful changes, showcasing the power of collaboration.",
+        content: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer vestibulum ligula leo, a vehicula ligula cursus ac. Nam tempus et erat eget vestibulum. Etiam vel bibendum ligula, id dictum enim. Cras non mi urna. Aenean ullamcorper mauris in felis suscipit tincidunt. Nunc vitae mauris et lectus tincidunt tincidunt sit amet eget lorem.",
         date: "2024-11-28",
         author: "Henry Carter",
         tags: []
@@ -372,7 +371,7 @@ export const news: NewsItem[] = [
         id: 30,
         category: "Humans",
         title: "Unsung Heroes: Teachers Shaping the Future",
-        content: "Explore the stories of educators who are making a lasting impact on the next generation.",
+        content: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam hendrerit nulla orci, eu luctus lorem cursus in. Pellentesque cursus purus eget libero aliquam, in feugiat nulla scelerisque. Nulla facilisi. Sed viverra velit ut nisi malesuada, ac vestibulum urna aliquet. Nam eget neque ac sapien fringilla efficitur.",
         date: "2024-12-02",
         author: "Isabella King",
         tags: []
