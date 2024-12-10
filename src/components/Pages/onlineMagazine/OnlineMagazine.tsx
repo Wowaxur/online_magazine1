@@ -1,7 +1,7 @@
 import React from 'react';
-import Header from "./header/header";
-import Footer from "./footer/footer";
-import MainContent from "./mainContent/mainContent";
+import Header from "./Features/header/header";
+import Footer from "./Features/footer/footer";
+import MainContent from "./Features/mainContent/mainContent";
 import {categories, footerData} from "../../../data";
 
 const OnlineMagazine = () => {

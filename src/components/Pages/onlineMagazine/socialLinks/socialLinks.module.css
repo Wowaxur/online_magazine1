@@ -6,19 +6,24 @@
 
 .SocialLinks a {
     color: #333;
-    font-size: 20px;
     text-decoration: none;
-    transition: color 0.3s;
+    transition: background-color 0.3s;
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 30px;
-    height: 30px;
+    width: 40px;
+    height: 40px;
     border-radius: 50%;
     background-color: #f4f4f4;
+    overflow: hidden; /* Убедитесь, что изображение не выходит за границы */
 }
 
 .SocialLinks a:hover {
-    color: #fff;
     background-color: #007bff;
+}
+
+.SocialLinks img {
+    width: 20px;
+    height: 20px;
+    object-fit: contain; /* Гарантирует, что изображение не будет искажено */
 }

@@ -1,0 +1,36 @@
+.container {
+    padding: 16px;
+    width: 180px;
+    height: 224px;
+    font-family: "Montserrat", sans-serif; /* Используем шрифт Montserrat */
+}
+
+.title {
+    font-size: 18px;
+    font-weight: 500; /* Medium */
+    color: #333;
+    margin-bottom: 8px;
+}
+
+.divider {
+    border: none;
+    border-top: 1px solid #e0e0e0;
+    margin: 8px 0 16px;
+}
+
+.category {
+    margin-bottom: 12px;
+}
+
+.link {
+    font-size: 14px; /* Размер текста */
+    font-weight: 500; /* Medium */
+    color: #000;
+    line-height: 1.5; /* Межстрочный интервал */
+    text-decoration: none;
+}
+
+.link:hover {
+    text-decoration: underline;
+    color: #007bff; /* Синий цвет при наведении */
+}
