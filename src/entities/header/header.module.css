@@ -1,0 +1,176 @@
+.Header {
+    width: 100%;
+    margin: 0 auto;
+    padding: 20px 0;
+    background-color: #fff;
+    border-bottom: 2px solid #ddd;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.LogoBlock {
+    display: flex;
+    justify-content: space-between; /* Разделяет элементы на всю ширину */
+    align-items: center;
+    width: 100%;
+    max-width: 1200px; /* Ограничиваем ширину */
+    padding: 10px 0;
+}
+
+.Logo {
+    font-size: 70px;
+    font-weight: bold;
+    color: #333;
+    font-family: "Georgia", serif;
+    margin: 0;
+}
+
+.Tagline {
+    font-size: 16px;
+    color: #666;
+    margin: 5px 0;
+    font-style: italic;
+    text-align: center;
+}
+
+.LeftControls, .RightControls {
+    padding-top: 70px;
+    display: flex;
+    gap: 15px;
+}
+
+.Burger, .Find {
+    background: none;
+    border: none;
+    font-size: 24px;
+    cursor: pointer;
+    color: #333;
+    transition: color 0.3s;
+}
+
+.Burger:hover, .Find:hover {
+    color: #007bff;
+}
+
+.Categories {
+    width: 90%;
+    margin-top: 20px;
+    text-align: center;
+}
+
+.LinksList {
+    display: flex;
+    justify-content: space-evenly;
+    gap: 30px;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.LinksList li {
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.LinksList a {
+    text-decoration: none;
+    color: #333;
+    padding: 10px 15px;
+    transition: color 0.3s, background-color 0.3s;
+    border-radius: 5px;
+}
+
+.LinksList a:hover {
+    color: #fff;
+    background-color: #FF7D40;
+}
+
+/* --- Мобильные стили --- */
+@media (max-width: 768px) {
+    .Header {
+        width: 100%;
+    }
+
+    .LogoBlock {
+        width: 100%;
+        display: flex; /* Логотип и кнопки друг под другом */
+        gap: 15px;
+        text-align: center;
+        padding: 0;
+    }
+
+    .LeftControls, .RightControls {
+        padding-top: 0;
+    }
+
+    .Logo {
+        font-size: 50px;
+    }
+
+    .Tagline {
+        font-size: 14px;
+    }
+
+    .Categories {
+        width: 100%;
+        overflow-x: auto; /* Горизонтальная прокрутка */
+        white-space: nowrap; /* Элементы в одну строку */
+        margin: 0; /* Убираем внешние отступы */
+        padding: 10px 0; /* Отступ сверху и снизу */
+        box-sizing: border-box; /* Учитываем padding в ширине элемента */
+    }
+
+    .LinksList {
+        display: inline-flex; /* Элементы располагаются горизонтально */
+        gap: 15px; /* Отступы между элементами */
+        list-style: none;
+        margin: 0; /* Убираем отступы */
+        padding: 0 20px; /* Убираем внутренние отступы */
+    }
+
+    .LinksList li {
+
+    }
+
+    .LinksList a {
+        font-family: Montserrat, sans-serif;
+        font-size: 14px;
+        font-weight: 500;
+        display: block;
+        text-decoration: none;
+        color: #333;
+        padding: 5px 10px;
+        border: 1px solid transparent;
+        transition: background-color 0.3s, color 0.3s;
+    }
+
+    .LinksList a:hover {
+        color: #fff;
+        background-color: #FF7D40;
+    }
+}
+
+@media (max-width: 480px) {
+    .Header {
+        width: 100%;
+        padding: 10px 0;
+    }
+
+    .Logo {
+        font-size: 40px;
+    }
+
+    .Burger, .Find {
+        font-size: 20px; /* Уменьшение размера иконок */
+    }
+
+    .Tagline {
+        font-size: 12px;
+    }
+
+    .LinksList {
+        gap: 5px;
+    }
+}

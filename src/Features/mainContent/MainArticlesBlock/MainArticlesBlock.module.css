@@ -1,0 +1,19 @@
+.mainContent {
+    height: 100%;
+    display: flex;
+    gap: 24px;
+    padding: 50px;
+}
+.newsWrapper {
+    display: flex;
+    flex-direction: column;
+}
+@media (max-width: 480px) {
+    .mainContent{
+        padding: 0 5px;
+        margin: 0 auto;
+        max-width: 480px;
+        gap: 10px;
+
+    }
+}

@@ -1,0 +1,108 @@
+.container {
+    width: 650px; /* Основная ширина блока */
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.mainNews {
+    margin-top: 34px;
+    margin-bottom: 20px;
+    padding: 16px;
+    background-color: #f9f9f9;
+    width: 650px;
+    height: 285px;
+    border-radius: 8px;
+}
+
+.category {
+    font-size: 14px;
+    color: #007bff;
+    text-transform: uppercase;
+    font-weight: bold;
+    margin-bottom: 8px;
+}
+
+.title {
+    font-family: Chonburi, Montserrat, sans-serif;
+
+    font-size: 24px;
+    font-weight: 500;
+    margin-bottom: 12px;
+}
+
+.content {
+    width: 100%;
+    font-size: 18px;
+    color: #555;
+    font-family: Montserrat, sans-serif;
+    line-height: 1.5; /* Отступ между строками текста */
+    font-weight: normal;
+    margin-bottom: 16px;
+    text-wrap: balance;
+}
+
+.exploreButton {
+    justify-self: flex-end;
+    align-self: flex-end;
+    font-size: 14px;
+    color: #007bff;
+    background: none;
+    border: none;
+    cursor: pointer;
+    text-transform: uppercase;
+}
+
+.exploreButton:hover {
+    text-decoration: underline;
+}
+
+.smallerNews {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.newsItem {
+    display: flex;
+    gap: 12px;
+    padding: 12px 0;
+    border-top: 1px solid #ddd;
+}
+
+.placeholder {
+    width: 100px;
+    height: 100px;
+    background-color: #e0e0e0; /* Серый цвет */
+    border-radius: 4px;
+    flex-shrink: 0;
+}
+
+.textContent {
+    flex: 1; /* Занимает оставшееся пространство */
+
+}
+.textContent span{
+    margin-right: 30px;
+
+}
+
+.date {
+    font-family: Montserrat, sans-serif;
+    font-size: 12px;
+    color: #888;
+}
+
+.newsTitle {
+    font-family: Chonburi, Montserrat, sans-serif;
+    font-size: 18px;
+    font-weight: 500;
+    margin: 8px 0;
+}
+
+.newsContent {
+    font-family: Montserrat, sans-serif;
+    line-height: 1.5; /* Отступ между строками текста */
+    font-size: 14px;
+    color: #555;
+}

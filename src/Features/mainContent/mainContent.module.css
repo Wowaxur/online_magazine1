@@ -1,0 +1,15 @@
+.mainContent {
+    width: 1440px;
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+
+}
+
+@media (max-width: 480px) {
+    .mainContent {
+        max-width: 480px;
+        width: 100%;
+
+    }
+}

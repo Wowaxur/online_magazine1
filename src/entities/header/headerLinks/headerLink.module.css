@@ -1,0 +1,25 @@
+.headerNavLink {
+
+    text-decoration: none;
+    color: #333;
+    padding: 5px 10px;
+    transition: color 0.3s, background-color 0.3s, opacity 0.3s;
+}
+
+.headerNavLink:hover {
+    color: #007bff;
+    background-color: rgba(255, 125, 64, 0.1); /* Только фон будет прозрачным */
+}
+
+@media (max-width: 768px) {
+    .headerNavLink {
+        text-align: center; /* Центрируем текст */
+        padding: 8px 0; /* Уменьшаем отступы внутри */
+        font-size: 14px; /* Сокращаем шрифт для мобильных устройств */
+    }
+
+    .headerNavLink:hover {
+        background-color: rgba(255, 125, 64, 0.1);
+        color: #fff;
+    }
+}
