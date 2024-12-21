@@ -1,14 +1,14 @@
 {
   "files": {
-    "main.css": "/online_magazine1/static/css/main.72c1af83.css",
-    "main.js": "/online_magazine1/static/js/main.d2aaaccb.js",
+    "main.css": "/online_magazine1/static/css/main.d10af7ff.css",
+    "main.js": "/online_magazine1/static/js/main.b5a014c1.js",
     "static/media/Orange_Full_BG_2.png": "/online_magazine1/static/media/Orange_Full_BG_2.e6e22b9cef9367c27ccf.png",
     "index.html": "/online_magazine1/index.html",
-    "main.72c1af83.css.map": "/online_magazine1/static/css/main.72c1af83.css.map",
-    "main.d2aaaccb.js.map": "/online_magazine1/static/js/main.d2aaaccb.js.map"
+    "main.d10af7ff.css.map": "/online_magazine1/static/css/main.d10af7ff.css.map",
+    "main.b5a014c1.js.map": "/online_magazine1/static/js/main.b5a014c1.js.map"
   },
   "entrypoints": [
-    "static/css/main.72c1af83.css",
-    "static/js/main.d2aaaccb.js"
+    "static/css/main.d10af7ff.css",
+    "static/js/main.b5a014c1.js"
   ]
 }
