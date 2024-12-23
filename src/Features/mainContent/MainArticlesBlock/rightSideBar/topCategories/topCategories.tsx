@@ -1,6 +1,7 @@
 import React from "react";
 import styles from "./topCategories.module.css";
 import { CategoriesProps } from "~/shared/types/types";
+import LinkToCategory from "~/Features/LinkToCategory/LinkToCategory";
 
 const TopCategories = ({ categories }: CategoriesProps) => {
     return (
@@ -12,9 +13,7 @@ const TopCategories = ({ categories }: CategoriesProps) => {
             ) : (
                 categories.map((category, index) => (
                     <div key={index} className={styles.category}>
-                        <a href={`#${category}`} className={styles.link}>
-                            {category.toUpperCase()}
-                        </a>
+                        <LinkToCategory category={category} />
                     </div>
                 ))
             )}
