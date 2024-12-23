@@ -1,8 +1,10 @@
 import { configureStore } from '@reduxjs/toolkit';
-import {okSurfApiSlice} from "~/shared/api/apiSlice";
+import newsReducer from '~/shared/api/newsSlice';
+import { okSurfApiSlice } from '~/shared/api/apiSlice';
 
 export const store = configureStore({
     reducer: {
+        news: newsReducer,
         [okSurfApiSlice.reducerPath]: okSurfApiSlice.reducer,
     },
     middleware: (getDefaultMiddleware) =>
