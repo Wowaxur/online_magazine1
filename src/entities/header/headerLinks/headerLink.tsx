@@ -1,4 +1,5 @@
 import s from './headerLink.module.css';
+import {Link} from "react-router-dom";
 
 type LinkPropsType = {
     text: string;
@@ -7,12 +8,11 @@ type LinkPropsType = {
 
 const HeaderLink = ({ text, isActive }: LinkPropsType) => {
     return (
-        <a
+        <Link to={`/category/${text}`}
             className={`${s.headerNavLink} ${isActive ? s.active : ''}`}
-            href={`#${text}`}
         >
-            {text}
-        </a>
+            {text.toUpperCase()}
+        </Link>
     );
 };
 
