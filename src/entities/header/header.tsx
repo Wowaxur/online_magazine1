@@ -40,7 +40,7 @@ const Header = ({ categories }: CategoriesProps) => {
                 <ul className={s.LinksList}>
                     {categories.map((text, index) => (
                         <li key={index}>
-                            <HeaderLink text={text.toUpperCase()} />
+                            <HeaderLink text={text} />
                         </li>
                     ))}
                 </ul>
