@@ -30,13 +30,13 @@ const OnlineMagazine = () => {
         error: newsDataError,
     } = useGetNewsFeedQuery()
     useEffect(() => {
-            // @ts-ignore
-        dispatch(setNewsByCategory(newsData)); // Если это уже объект, передаем как есть
+        // @ts-ignore
+        dispatch(setNewsByCategory(newsData));
 
     }, [newsData, dispatch]);
     const newsByCategory: NewsByCategory = useMemo(() => {
         if (!newsData || typeof newsData !== 'object') return {};
-        return newsData; // Используем данные как есть
+        return newsData;
     }, [newsData]);
     return (
         <div className={styles.container}>
@@ -47,8 +47,6 @@ const OnlineMagazine = () => {
                 isError={isNewsDataError}
                 error={newsDataError}
             />
-
-            {/* Footer */}
             <Footer columns={footerData.columns}/>
         </div>
     );
