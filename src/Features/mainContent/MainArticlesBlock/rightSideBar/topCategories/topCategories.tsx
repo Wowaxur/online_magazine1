@@ -11,11 +11,13 @@ const TopCategories = ({ categories }: CategoriesProps) => {
             {categories.length === 0 ? (
                 <p>No categories available</p>
             ) : (
-                categories.map((category, index) => (
-                    <div key={index} className={styles.category}>
-                        <LinkToCategory category={category} />
-                    </div>
-                ))
+                <div className={styles.buttonsWrapper}>
+                    {categories.map((category, index) => (
+                        <div key={index} className={styles.categoryButton}>
+                            <LinkToCategory category={category} />
+                        </div>
+                    ))}
+                </div>
             )}
         </div>
     );

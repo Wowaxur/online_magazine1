@@ -1,6 +1,5 @@
 import React from 'react';
 import s from './searchBlock.module.css';
-// import imageSrc from '../../assets/images/Orange_Full_BG_2.png';
 import imageSearch from '../../../shared/ui/SearchIcon/SearchIcon.png';
 
 const SearchBlock = () => {
