@@ -2,23 +2,9 @@
     display: flex;
     flex-direction: column;
     gap: 40px;
-    min-width: 932px;
+    width: 100%;
 }
 
-.categoryBlock {
-    width: 929px;
-    display: flex;
-    gap: 24px;
-    align-items: flex-start;
-}
-
-.categoryBlock .rubrics {
-    flex: 1;
-}
-
-.categoryBlock .news {
-    flex: 2;
-}
 
 @media (max-width: 480px) {
     .container {
@@ -27,13 +13,6 @@
         width: 90%;
         gap: 30px;
     }
-    .categoryBlock{
-        min-width: 200px;
-        max-width: 480px;
-        width: 100%;
-        gap: 10px;
-        display: block;
 
-    }
 }
 

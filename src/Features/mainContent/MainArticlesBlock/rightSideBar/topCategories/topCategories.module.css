@@ -1,37 +1,84 @@
 @import url('../../../../../shared/styles/fonts.css');
+
 .container {
     padding: 16px;
-    width: 180px;
-    height: 224px;
-    font-family: "Montserrat", sans-serif; /* Используем шрифт Montserrat */
+    width: 200px; /* Чуть больше ширина */
+    height: auto; /* Убираем фиксированную высоту */
+    font-family: "Montserrat", sans-serif;
+    background-color: #f9f9f9; /* Светлый фон */
+    border-radius: 8px; /* Скруглённые углы */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Лёгкая тень */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Анимация */
+}
+
+.container:hover {
+    transform: translateY(-5px); /* Лёгкий эффект подъёма при наведении */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Усиление тени */
 }
 
 .title {
-    font-size: 18px;
+    font-size: 20px; /* Увеличен размер */
     font-weight: bold;
-    color: #333;
-    margin-bottom: 8px;
+    color: #222; /* Более насыщенный цвет */
+    margin-bottom: 12px; /* Увеличен отступ снизу */
+    text-align: center; /* Заголовок по центру */
+    text-transform: uppercase; /* Преобразование в заглавные */
 }
 
 .divider {
     border: none;
-    border-top: 1px solid #e0e0e0;
-    margin: 8px 0 16px;
+    border-top: 2px solid #007bff; /* Акцентный цвет */
+    margin: 12px 0 20px; /* Больше отступов */
 }
 
 .category {
-    margin-bottom: 12px;
+    margin-bottom: 14px;
+    text-align: center; /* Центрируем текст */
+}
+.buttonsWrapper {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px; /* Расстояние между кнопками */
+    justify-content: center;
+    margin-top: 16px; /* Отступ сверху */
 }
 
-.link {
-    font-size: 14px; /* Размер текста */
-    font-weight: 500; /* Medium */
-    color: #000;
-    line-height: 1.5; /* Межстрочный интервал */
+.categoryButton {
+    padding: 8px 16px; /* Внутренний отступ кнопки */
+    border: 2px solid #007bff; /* Синий бордер */
+    border-radius: 8px; /* Скруглённые углы */
+    background-color: #fff; /* Белый фон */
+    font-size: 15px;
+    font-weight: 600;
+    text-align: center;
+    color: #333; /* Цвет текста */
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease, transform 0.3s ease;
+}
+
+.categoryButton:hover {
+    background-color: #007bff; /* Синий фон при наведении */
+    color: #fff; /* Белый текст */
+    transform: translateY(-3px); /* Лёгкий подъём */
+}
+
+.categoryButton a {
     text-decoration: none;
+    color: inherit; /* Наследуем цвет от контейнера */
+}
+.link {
+    font-size: 15px; /* Чуть больше шрифт */
+    font-weight: 600; /* Полужирный текст */
+    color: #333;
+    line-height: 1.6; /* Увеличенный межстрочный интервал */
+    text-decoration: none;
+    padding: 6px 12px; /* Добавлен отступ для кликабельности */
+    border-radius: 4px; /* Скругление фона */
+    transition: background-color 0.3s ease, color 0.3s ease; /* Анимация */
 }
 
 .link:hover {
-    text-decoration: underline;
-    color: #007bff; /* Синий цвет при наведении */
+    text-decoration: none; /* Убираем подчёркивание при наведении */
+    background-color: #007bff; /* Синий фон */
+    color: #fff; /* Белый текст */
 }

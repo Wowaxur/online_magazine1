@@ -1,6 +1,9 @@
 .rightSideBar {
-    height: 100%;
+    height: calc(100vh - 60vh); /* Ограничиваем высоту прилипания */
     display: flex;
     flex-direction: column;
     gap: 40px;
+    position: sticky; /* Меняем static на sticky */
+    top: 20px; /* Расстояние от верхнего края экрана */
+    bottom: 100px
 }

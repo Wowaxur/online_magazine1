@@ -12,7 +12,7 @@ const MainContentSection: React.FC<MainContentSectionProps> = ({ news, category 
     if (!news.length) return <p>No news available for {category}.</p>;
     return (
         <div className={styles.container}>
-            <NewsSection news={news} categoryColor="#000" />
+            <NewsSection news={news} category={category} />
         </div>
     );
 };

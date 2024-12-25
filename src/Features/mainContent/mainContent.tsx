@@ -25,7 +25,7 @@ const MainContent: React.FC<MainContentProps> = ({
 
     return (
         <div className={s.mainContent}>
-            <SearchBlock />
+            {/*<SearchBlock />*/}
             <MainArticlesBlock newsByCategory={newsByCategory} />
             <SubscribeBlock />
         </div>
