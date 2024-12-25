@@ -1,8 +1,28 @@
 .container {
+    display: flex; /* Используем flexbox для разделения основного контента и боковой панели */
+    flex-direction: row; /* Размещаем элементы в строку */
     padding: 20px;
+    gap: 20px; /* Расстояние между основным контентом и боковой панелью */
 }
 
-.error {
-    color: red;
-    text-align: center;
+.mainContent {
+    flex: 3; /* Основной контент занимает больше места */
+    display: flex;
+    flex-direction: column; /* Контент располагается в колонку */
+    gap: 20px; /* Отступы между заголовком и карточками */
+}
+
+.NewsContainer {
+    display: flex;
+    flex-wrap: wrap;
+
+    gap: 20px; /* Расстояние между карточками */
+    justify-content: start; /* Карточки выравниваются по левому краю */
+}
+
+.rightSideBar {
+    flex: 1; /* Боковая панель занимает меньше места */
+    position: sticky; /* Фиксируем сайдбар */
+    top: 20px; /* Расстояние от верхнего края окна */
+    height: fit-content;
 }
