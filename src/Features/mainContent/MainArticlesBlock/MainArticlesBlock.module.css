@@ -1,12 +1,17 @@
 .mainContent {
+    width: 100%;
     height: 100%;
     display: flex;
-    gap: 24px;
-    padding: 50px;
+    position: relative;
+    justify-content: space-evenly;
+    gap: 2rem;
 }
 .newsWrapper {
     display: flex;
     flex-direction: column;
+}
+.categoryBlock{
+    padding-left: 50px;
 }
 @media (max-width: 480px) {
     .mainContent{
