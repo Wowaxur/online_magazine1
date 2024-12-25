@@ -1,16 +1,17 @@
 import React from 'react';
-import { useSelector } from 'react-redux';
-import { useParams } from 'react-router-dom';
-import { NewsArticle } from '~/shared/types/types';
+import {useSelector} from 'react-redux';
+import {useParams} from 'react-router-dom';
+import {NewsArticle} from '~/shared/types/types';
 import styles from './CategoryPage.module.css';
 import {RootState} from "~/app/store/store";
-
+import NewsCard from "~/Features/NewsCard/NewsCard";
+import {isWindowDesktop} from "~/shared/helpers/isWindowDesktopHelper";
+import RightSideBar from "~/Features/mainContent/MainArticlesBlock/rightSideBar/rightSideBar";
 
 
 const CategoryPage: React.FC = () => {
-    const { categoryName } = useParams<{ categoryName: string }>();
+    const {categoryName} = useParams<{ categoryName: string }>();
     const newsData = useSelector((state: RootState) => state.news.newsByCategory);
-    console.log(newsData)
     if (!categoryName) {
         return (
             <div className={styles.container}>
@@ -33,17 +34,22 @@ const CategoryPage: React.FC = () => {
 
     return (
         <div className={styles.container}>
-            <h1>News in {categoryName}</h1>
-            <ul>
-                {filteredNews.map((newsItem, index) => (
-                    <li key={index} className={styles.newsItem}>
-                        <h2>{newsItem.title}</h2>
-                        <a href={newsItem.link} target="_blank" rel="noopener noreferrer">
-                            Read more
-                        </a>
-                    </li>
-                ))}
-            </ul>
+            <div className={styles.Wrapper}>
+                <h1 style={{flexWrap: 'nowrap'}}>News in {categoryName}</h1>
+                <div className={styles.NewsContainer}>
+                    {filteredNews.map((newsItem, index) => (
+                        <NewsCard
+                            key={index}
+                            title={newsItem.title}
+                            link={newsItem.link}
+                            og={newsItem.og}
+                            sourceIcon={newsItem.source_icon}
+                            category={categoryName}
+                        />
+                    ))}
+                </div>
+            </div>
+            {isWindowDesktop && <RightSideBar/>}
         </div>
     );
 };
