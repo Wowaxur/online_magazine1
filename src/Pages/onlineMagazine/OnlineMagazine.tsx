@@ -8,44 +8,35 @@ import { NewsByCategory} from "~/shared/types/types";
 import {useGetNewsFeedQuery, useGetNewsSectionsQuery} from "~/shared/api/apiSlice";
 import {useDispatch} from "react-redux";
 import {setNewsByCategory} from "~/shared/api/newsSlice";
+import {useNewsCache} from "~/shared/helpers/useNewsCache";
+import {useAppDispatch} from "~/app/store/store";
 
 
 
 
 const OnlineMagazine = () => {
-    const dispatch = useDispatch();
+    const { cachedNews} = useNewsCache();
 
     // Хуки для получения данных
+
     const {
         data: categoriesData,
         isLoading: isCategoriesLoading,
         isError: isCategoriesError,
-        error: categoriesError,
     } = useGetNewsSectionsQuery();
 
-    const {
-        data: newsData,
-        isLoading: isNewsDataLoading,
-        isError: isNewsDataError,
-        error: newsDataError,
-    } = useGetNewsFeedQuery()
-    useEffect(() => {
-        // @ts-ignore
-        dispatch(setNewsByCategory(newsData));
 
-    }, [newsData, dispatch]);
-    const newsByCategory: NewsByCategory = useMemo(() => {
-        if (!newsData || typeof newsData !== 'object') return {};
-        return newsData;
-    }, [newsData]);
+
+    const newsByCategory = useMemo(() => cachedNews || {}, [cachedNews]);
+
+
     return (
         <div className={styles.container}>
             <Header categories={categoriesData || []}/>
             <MainContent
                 newsByCategory={newsByCategory || {}}
-                isLoading={isNewsDataLoading}
-                isError={isNewsDataError}
-                error={newsDataError}
+                isLoading={isCategoriesLoading}
+                isError={isCategoriesError}
             />
             <Footer columns={footerData.columns}/>
         </div>
