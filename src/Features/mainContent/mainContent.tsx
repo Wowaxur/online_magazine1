@@ -11,17 +11,14 @@ interface MainContentProps {
     newsByCategory: NewsByCategory;
     isLoading: boolean;
     isError: boolean;
-    error: any;
 }
 
 const MainContent: React.FC<MainContentProps> = ({
                                                      newsByCategory,
                                                      isLoading,
                                                      isError,
-                                                     error,
                                                  }) => {
     if (isLoading) return <p>Loading news...</p>;
-    if (isError) return <p>Error loading news: {error?.message || 'Unknown error'}</p>;
 
     return (
         <div className={s.mainContent}>
