@@ -4,6 +4,7 @@ import s from "./header.module.css";
 import HeaderLink from "./headerLinks/headerLink";
 import {isWindowDesktop} from "~/shared/helpers/isWindowDesktopHelper";
 import {CategoriesProps} from "~/shared/types/types";
+import LogoutButton from "~/Features/LogoutButton/LogoutButton";
 
 
 
@@ -28,9 +29,7 @@ const Header = ({ categories }: CategoriesProps) => {
                 {!isWindowDesktop && (
                     <button className={s.Find} aria-label="Search">🔍</button>
                 )}
-
-
-
+                <LogoutButton/>
                     {isWindowDesktop && <div className={s.RightControls}>
                         <SocialLinks />
                     </div>}
